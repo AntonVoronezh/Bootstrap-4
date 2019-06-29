@@ -83,3 +83,9 @@ const newArr = arr.slice();
 
 // 3
 const newArr = arr.concat('ccc');
+
+
+// получение случайного эл-та массива
+const arr = [11, 22, 33, 44, 55, 66];
+
+const rand = Math.round(Math.random() * arr.length);
