@@ -28,3 +28,9 @@ const personObj = { name: 'ddd', age: 10 };
 const personArr = [];
 //1
 Object.keys(personObj).forEach(key => personArr.push([key, personObj[key]]));
+
+//2
+Object.keys(personObj).map(key => personArr.push([key, personObj[key]]));
+
+// 3
+Object.entries(personObj);
