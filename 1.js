@@ -70,3 +70,16 @@ const res = Object.keys(obj).map(k => obj[k])
 
 // 2
 const res = Object.values(obj);
+
+
+// поверхностная копия массива (shalllou)
+const arr = ['aaa', 'bbb'];
+
+// 1
+const newArr = [].concat(arr);
+
+// 2
+const newArr = arr.slice();
+
+// 3
+const newArr = arr.concat('ccc');
