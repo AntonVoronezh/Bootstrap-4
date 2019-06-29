@@ -54,3 +54,9 @@ const obj = { };
 
 obj['ffff'] = 11111;
 
+
+// фильтрация объектов
+const obj = {aaa: 1, bbbb: 2, cсс: 3};
+
+const filteredObj = {}
+const res = Object.keys(obj).filter(k => k !== 'aaa').map(k => filteredObj[k] = obj[k])
