@@ -60,3 +60,13 @@ const obj = {aaa: 1, bbbb: 2, cсс: 3};
 
 const filteredObj = {}
 const res = Object.keys(obj).filter(k => k !== 'aaa').map(k => filteredObj[k] = obj[k])
+
+
+// получение значений объекта
+const obj = { aaa: 111, bbbb: 222, cсс: 333 };
+
+// 1
+const res = Object.keys(obj).map(k => obj[k])
+
+// 2
+const res = Object.values(obj);
