@@ -17,3 +17,8 @@ for (let u in userObj) {
 for (let u of Object.keys(userObj)) {
 	console.log(u, userObj[u]);
 }
+
+// 3
+Object.entries(userObj).forEach(([key, value]) => {
+	console.log(key, value);
+});
