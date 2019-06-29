@@ -22,3 +22,9 @@ for (let u of Object.keys(userObj)) {
 Object.entries(userObj).forEach(([key, value]) => {
 	console.log(key, value);
 });
+
+// Объект в массив
+const personObj = { name: 'ddd', age: 10 };
+const personArr = [];
+//1
+Object.keys(personObj).forEach(key => personArr.push([key, personObj[key]]));
