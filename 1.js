@@ -7,6 +7,13 @@ const length = Object.keys(obj).length;
 
 const userObj = { first: 'aaaa', last: 'bbbbb' };
 
-for(u in userObj) {
-   console.log(u, userObj[u])
+for (let u in userObj) {
+	if (userObj.hasOwnProperty(u)) {
+		console.log(u, userObj[u]);
+	}
+}
+
+// 2
+for (let u of Object.keys(userObj)) {
+	console.log(u, userObj[u]);
 }
