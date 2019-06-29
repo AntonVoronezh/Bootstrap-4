@@ -49,4 +49,8 @@ result = obj.hasOwnProperty('aaa');
 const obj = { aaa: 1, bbbb: 2, c: 3 };
 const obj2 = { aaa: 10, ссс: 2, c: 4 };
 
-const res = Object.assign(obj, obj2);
+// вычтсляемые значения
+const obj = { };
+
+obj['ffff'] = 11111;
+
