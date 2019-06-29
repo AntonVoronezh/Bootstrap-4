@@ -35,7 +35,6 @@ Object.keys(personObj).map(key => personArr.push([key, personObj[key]]));
 // 3
 Object.entries(personObj);
 
-
 // проверка наличия свойст в объекте
 const obj = { aaa: 1, bbbb: 2, c: 3 };
 
@@ -43,4 +42,11 @@ const obj = { aaa: 1, bbbb: 2, c: 3 };
 let result = 'toString' in obj;
 
 // 2
-result = obj.hasOwnProperty('aaa')
+result = obj.hasOwnProperty('aaa');
+
+
+// объединение объектов
+const obj = { aaa: 1, bbbb: 2, c: 3 };
+const obj2 = { aaa: 10, ссс: 2, c: 4 };
+
+const res = Object.assign(obj, obj2);
