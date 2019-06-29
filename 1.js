@@ -34,3 +34,13 @@ Object.keys(personObj).map(key => personArr.push([key, personObj[key]]));
 
 // 3
 Object.entries(personObj);
+
+
+// проверка наличия свойст в объекте
+const obj = { aaa: 1, bbbb: 2, c: 3 };
+
+// 1
+let result = 'toString' in obj;
+
+// 2
+result = obj.hasOwnProperty('aaa')
