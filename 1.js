@@ -126,3 +126,6 @@ const findAllIndex = (arr, value) => {
 	return out;
 };
 
+
+// создание массива [1,2,3,4......]
+const res = Array.from({ length: 4 }, (v, i) => i + 1);
