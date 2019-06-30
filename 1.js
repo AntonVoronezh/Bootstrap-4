@@ -170,3 +170,8 @@ const res = text => `${text[0].toUpperCase()}${text.slice(1)}`
 
 //2
 const res = ([first, ...res]) => `${first.toUpperCase()}${res.join('')}`
+
+
+// случайное число
+
+const getRandInt = (min, max) => Math.round(Math.random() * (max - min) + min);
