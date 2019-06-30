@@ -89,3 +89,27 @@ const newArr = arr.concat('ccc');
 const arr = [11, 22, 33, 44, 55, 66];
 
 const rand = Math.round(Math.random() * arr.length);
+
+
+// удаление из массива псевдоложных значенией
+const arr = [11, '', '33', null, {}, [], NaN, undefined];
+
+const newArr = arr.filter(a => a);
+
+
+// удаление из массива значенией
+const arr = [3, 4, 5, 6, 7, 8];
+
+// 1
+const newArr = arr.filter(a => a > 5);
+
+// 2
+const newArr = arr.splice(3,1, 'ggggg');
+
+
+// преобразование номеров
+const card = '1234-2345-4567';
+
+const cardNew = card.split('').filter(c => c !== '-');
+
+console.log(cardNew.fill('*',0, 5).join(''));
