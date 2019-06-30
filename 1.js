@@ -160,3 +160,13 @@ const res = str.includes('gdg');
 
 //2
 const res = str.indexOf('gdg');
+
+
+// первый символ большой
+const str = 'fdsgdghfhjghjhjf fhgdfhfgh';
+
+// 1
+const res = text => `${text[0].toUpperCase()}${text.slice(1)}`
+
+//2
+const res = ([first, ...res]) => `${first.toUpperCase()}${res.join('')}`
