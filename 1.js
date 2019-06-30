@@ -113,3 +113,16 @@ const card = '1234-2345-4567';
 const cardNew = card.split('').filter(c => c !== '-');
 
 console.log(cardNew.fill('*',0, 5).join(''));
+
+
+// поиск всех вхождений
+const names = ['A', 'F', 'V', 'S', 'F'];
+
+const namesRes = names.findIndex(n => n === 'F');
+
+const findAllIndex = (arr, value) => {
+	const out = [];
+	arr.forEach(a => a === value && out.push(a));
+	return out;
+};
+
