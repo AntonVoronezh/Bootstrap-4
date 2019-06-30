@@ -150,3 +150,13 @@ const res = [...new Set(names1)];
 
 //2
 const res = names1.filter(el => names2.includes(el));
+
+
+// поиск вхождений
+const str = 'fdsgdghfhjghjhjf fhgdfhfgh';
+
+// 1
+const res = str.includes('gdg');
+
+//2
+const res = str.indexOf('gdg');
