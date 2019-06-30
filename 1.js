@@ -134,4 +134,8 @@ const res = Array.from({ length: 4 }, (v, i) => i + 1);
 // только уникальные значения в массиве
 const names = ['aa', 'bb', 'vv', 'bb'];
 
+// 1
 const res = names.filter((el, idx, arr) => (arr.indexOf(el) === idx ? el : ''));
+
+// 2
+const res = [...new Set(names)];
