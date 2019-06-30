@@ -129,3 +129,9 @@ const findAllIndex = (arr, value) => {
 
 // создание массива [1,2,3,4......]
 const res = Array.from({ length: 4 }, (v, i) => i + 1);
+
+
+// только уникальные значения в массиве
+const names = ['aa', 'bb', 'vv', 'bb'];
+
+const res = names.filter((el, idx, arr) => (arr.indexOf(el) === idx ? el : ''));
