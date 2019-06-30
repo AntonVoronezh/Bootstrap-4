@@ -139,3 +139,14 @@ const res = names.filter((el, idx, arr) => (arr.indexOf(el) === idx ? el : ''));
 
 // 2
 const res = [...new Set(names)];
+
+
+// пересечения массивов
+const names1 = ['aa', 'bb', 'vv'];
+const names2 = ['aa', 'bb', 'ff'];
+
+// 1
+const res = [...new Set(names1)];
+
+//2
+const res = names1.filter(el => names2.includes(el));
